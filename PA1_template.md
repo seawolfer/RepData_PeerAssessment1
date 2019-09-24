@@ -53,7 +53,7 @@ hist(stepsByDay$steps, col = "red"
      , xlab = "Steps", main = "Total Number of Steps Per Day")
 ```
 
-![plot of chunk histogram1](./PA1_template_files/figure-html/r-plot1-1.png)<!-- -->
+![](PA1_template_files/figure-html/r-plot1-1.png)<!-- -->
 
 3. Calculate and report the mean and median total number of steps taken per day
 
