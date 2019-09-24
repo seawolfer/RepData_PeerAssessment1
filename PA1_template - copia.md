@@ -1,3 +1,8 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
 # Reproducible Research: Peer Assessment 1
 
 ## Loading and preprocessing the data
