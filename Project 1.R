@@ -8,7 +8,7 @@ stepsByDay <- aggregate(steps~date, data, sum)
 head(stepsByDay)
 
 # 2. Make a histogram of the total number of steps taken each day
-hist(stepsByDay$steps, col = "blue"
+hist(stepsByDay$steps, col = "red"
      , xlab = "Steps", main = "Total Number of Steps Per Day")
 
 # 3. Calculate and report the mean and median total number of steps taken per day
@@ -26,7 +26,7 @@ head(averageSteps)
 #2. Make a time series plot
 with(averageSteps, plot(interval, steps
                 , type="l", main="Average number of steps taken in 5-min interval"
-                , col = "blue")) 
+                , col = "green")) 
 
 #Max data is:
 max <- max(averageSteps$steps)
@@ -58,7 +58,7 @@ sumdata <- aggregate(steps~date, newdata, sum)
 head(sumdata)
 
 #6. Make a histogram
-hist(sumdata$steps, col = "green"
+hist(sumdata$steps, col = "blue"
      , xlab = "Steps"
      , main = "Total Number of Steps Per Day (with the missing data filled in)")
 
@@ -94,11 +94,11 @@ head(weekendMean)
 layout(matrix(c(1,1,2,2), 2, 2, byrow = TRUE))
 plot(weekdayMean$interval, weekdayMean$steps
      , xlab = "interval", ylab = "Number of steps"
-     , main ="Weekday", col ="blue", type="l") 
+     , main ="Weekday", col ="red", type="l") 
 
 plot(weekendMean$interval, weekendMean$steps
      , xlab = "interval", ylab = "Number of steps"
-     , main ="Weekend", col ="yellow", type="l")
+     , main ="Weekend", col ="green", type="l")
 
 #library(knitr)
 #library(markdown)

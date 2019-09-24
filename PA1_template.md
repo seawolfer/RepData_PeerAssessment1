@@ -49,11 +49,11 @@ head(stepsByDay)
 2. Make a histogram of the total number of steps taken each day
 
 ```r
-hist(stepsByDay$steps, col = "blue"
+hist(stepsByDay$steps, col = "red"
      , xlab = "Steps", main = "Total Number of Steps Per Day")
 ```
 
-![](PA1_template_files/figure-html/plot4-1.png)<!-- -->
+![](PA1_template_files/figure-html/r-plot1-1.png)<!-- -->
 
 3. Calculate and report the mean and median total number of steps taken per day
 
@@ -97,10 +97,10 @@ head(averageSteps)
 ```r
 with(averageSteps, plot(interval, steps
                 , type="l", main="Average number of steps taken in 5-min interval"
-                , col = "blue")) 
+                , col = "green")) 
 ```
 
-![](PA1_template_files/figure-html/plot1-1.png)<!-- -->
+![](PA1_template_files/figure-html/r-plot2-1.png)<!-- -->
 
 3. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -220,12 +220,12 @@ head(sumdata)
 6. Make a histogram of the total number of steps taken each day
 
 ```r
-hist(sumdata$steps, col = "green"
+hist(sumdata$steps, col = "blue"
      , xlab = "Steps"
      , main = "Total Number of Steps Per Day (with the missing data filled in)")
 ```
 
-![](PA1_template_files/figure-html/plot2-1.png)<!-- -->
+![](PA1_template_files/figure-html/r-plot3-1.png)<!-- -->
 
 7. Calculate and report the mean and median total number of steps taken per day
 
@@ -338,11 +338,11 @@ head(weekendMean)
 layout(matrix(c(1,1,2,2), 2, 2, byrow = TRUE))
 plot(weekdayMean$interval, weekdayMean$steps
      , xlab = "interval", ylab = "Number of steps"
-     , main ="Weekday", col ="blue", type="l") 
+     , main ="Weekday", col ="red", type="l") 
 
 plot(weekendMean$interval, weekendMean$steps
      , xlab = "interval", ylab = "Number of steps"
-     , main ="Weekend", col ="yellow", type="l")
+     , main ="Weekend", col ="green", type="l")
 ```
 
-![](PA1_template_files/figure-html/plot3-1.png)<!-- -->
+![](PA1_template_files/figure-html/r-plot4-1.png)<!-- -->
